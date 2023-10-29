@@ -1,0 +1,148 @@
+/* Page colors and fonts */
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --ff: 'Kumbh Sans', sans-serif;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p,span {
+  color: var(--dark-grayish-blue);
+}
+
+/* General styling */
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw-normal);
+  color: var(--very-dark-desaturated-blue);
+
+  background-color: var(--dark-cyan);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  /* background-position: right -120% top -80%, left -120% bottom -60%; */
+  background-position: -80vw -60vw , 40vw 120vw;
+  background-size: cover;
+  background-size: 40rem;
+
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+article {
+  overflow: hidden;
+  width: 20.375rem;
+  height: 23.375rem;
+  border-radius: 0.9375rem;
+  background: #ffffff;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.50);
+}
+
+.user-profile {
+  background: #fff url(images/bg-pattern-card.svg) no-repeat top;
+}
+
+.user-profile {
+  height: 75%;
+  padding: 5.5rem 0 1.75rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile__img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.user-profile__info h3 {
+  display: inline-block;
+}
+
+.user-profile__info span {
+  font-size: 1.125rem;
+  margin-left: 0.55rem;
+}
+
+.user-profile__city {
+  font-size: 0.875rem;
+}
+
+.user-stats {
+  height: 25%;
+  border-top: 1px solid hsl(225, 10%, 92%);
+  font-size: 1.125rem;
+  font-weight: var(--fw-bold);
+  text-align: center;
+  padding: 0 2.55rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-stats span {
+  font-size: 0.625rem;
+  font-weight: var(--fw-normal);
+  letter-spacing: 1.5px;
+}
+
+.attribution {
+  margin-top: 0.75rem;
+}
+
+.attribution,
+.attribution a {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Desktop styling */
+@media (min-width: 1440px) {
+  body {
+    background-position: -40vw -40vw , 40vw 38vw;
+    background-size: 65rem;  
+  }
+  }
+
+
+
+
+
+
+
+
